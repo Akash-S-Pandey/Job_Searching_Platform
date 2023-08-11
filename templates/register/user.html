@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="us-eng">
+    <meta name="description" content="This is user login page">
+    <title>userlogin</title>
+    <link rel="stylesheet" type="text/css" href="./user.css">
+</head>
+
+<body>
+    <div>
+        <div><h1 style="text-align: center;">User Registeration Form</h1></div>
+        <form action="../../navigation/landing_page.html">
+
+            <h3>Personal Details</h3>
+            <hr>
+            <section>
+
+                <label>First name</label>: <input type="text" name="first_name" placeholder="First name" required>
+                <label>Middle name</label>: <input type="text" name="middle_name" placeholder="Middle name">
+                <label>Last name</label>: <input type="text" name="last_name" placeholder="Last name" required>
+                <label id="gender" name="gender">Select Gender</label> <input type="radio" name="gender"> Male<input type="radio"
+                    name="gender"> Female<br><br>
+                <label>Date of Birth</label>: <input type="date" required name="dob">
+                <label>Email</label>: <input type="email" name="email" placeholder="Enter Your Personal Email Id" required>
+                <label>Password</label>:<input type="password" name="pass1" placeholder="Enter password" required>
+                <label>Confirm Password</label>:<input type="password" name="pass2" placeholder="Enter password" required>
+
+            </section>
+            
+            <h3>Contact Information</h3>
+            <hr>
+            <section>
+                <label>Country</label>: <input type="text" required>
+                <label>State</label>: <input type="text" required>
+                <label>City/town/village</label>:<input type="text" required><br><br>
+                <label>Pincode</label>: <input type="number" required>
+                <label>Email</label>: <input type="email" name="c_email" placeholder="Personal email id" required>
+                <label>Mobile no</label>: <input type="phone" name="mob1" placeholder="+ 91" required><br><br>
+                <label>Alternate Mobile no</label>: <input type="phone" name="mob2" placeholder="+ 91" required>
+            </section>
+            <h3>Education Details</h3>
+            <hr>
+            <section>
+                <label>Higest Qualification</label>: <input type="text" required>
+                <label>College Name or University Name</label>: <input type="text" name="college"
+                    placeholder="Enter College Name" required>
+                <label>Graduation Percentage</label>: <input type="number" name="grad_per"
+                    placeholder="SGPI or Percentage" required><br><br>
+                <label>12th Percentage</label>: <input type="number" name="12th_per"
+                    placeholder="Intermidiate Percentage" required>
+                <label>10th Percentage</label>: <input type="number" name="10th_per" placeholder="High School Percentage" required>
+                <br><br><label>Upload Resume</label>: <input type="file">
+            </section><br>
+            <input type="checkbox" required><label>Agree all the terms and conditions</label><br><br>
+            <button name="submit">Submit</button>
+            <hr>
+           
+        </form>
+        
+        
+    </div>
+
+
+</body>
+
+</html>

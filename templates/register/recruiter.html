@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Company Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Company Registration</h1>
+    <form action="../../navigation/landing_page.html">
+        <h3>Company Information</h3>
+        <hr>
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name" required>
+
+        <label for="business_activity">Business Activity:</label>
+        <input type="text" id="business_activity" name="business_activity" required>
+
+        <label for="establishment_date">Date of Establishment:</label>
+        <input type="date" id="establishment_date" name="establishment_date" required>
+
+        <label for="registered_address">Registered Address:</label>
+        <textarea id="registered_address" name="registered_address" rows="4" required></textarea>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <h3>Owner Information</h3>
+        <hr>
+        <label for="owner_name">Owner Name:</label>
+        <input type="text" id="owner_name" name="owner_name" required>
+
+        <label for="percentage_ownership">Percentage of Ownership:</label>
+        <input type="text" id="percentage_ownership" name="percentage_ownership" required>
+
+        <label for="owner_address">Owner Address:</label>
+        <textarea id="owner_address" name="owner_address" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
