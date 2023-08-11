@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="This website is developed by Akash Pandey for Neuvora Infotec">
+    <title>Nuevera Infotech</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            height: 300px;
+            background-image: linear-gradient(135deg, #eb7a41, #ff6b6b);
+            overflow: hidden;
+            perspective: 1200px;
+        }
+
+        header:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            animation: rotate 10s infinite linear;
+        }
+
+        header img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        nav {
+            background-color: #6e6767;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #eedfdf;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #444141;
+            padding: 10px;
+            min-width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+            margin: 5px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="../images/logo.png" alt="Logo" style="width: 100px;">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blog.html" target="_top">Blogs</a></li>
+                <li><a href="./contact.html" target="_self">Contact</a></li>
+                <li>
+                    <a href="#">New Registration</a>
+                    <ul>
+                        <li><a href="../templates/register/recruiter.html">Register as Company</a></li>
+                        <li><a href="../templates/register/user.html">Register as Student or Job Seeker</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                    <ul>
+                        <li><a href="../templates/login/recruiter_login.html">Company</a></li>
+                        <li><a href="../templates/login/userlogin.html">Job Seeker</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h1>Best HTML and CSS Video</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p>This video is sponsered by codeforfree.org this video include best explanation of Complete HTML and CSS properties
+                    that include the Html tags,attributes,values and much more that covered all the topics from basics to advance
+                </p>
+            </section>
+            <section>
+                <h1>This is section 2</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FhHjwJmPGUM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores modi qui eum porro
+                    reprehenderit earum quibusdam id delectus iste doloribus nesciunt quod neque dolores cumque deleniti
+                    beatae, eligendi dolore.</p>
+            </section>
+            <section>
+                <h1>This is section 3</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jWT28P7QbBM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quo accusantium rem sequi numquam
+                    perferendis magnam veritatis est, quasi, rerum ipsum blanditiis! Unde id voluptas voluptatem beatae,
+                    ipsa maiores quod.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p><strong>Nuevera Infotech Career Website</strong></p>
+        <p>&copy; All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
